@@ -5,7 +5,7 @@
 .idea/
 
 # logs
-/logs/**/*.log
+/docker/logs/**/*.log
 
 # application
 /symfony/**/*.*
