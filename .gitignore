@@ -6,3 +6,7 @@
 
 # logs
 /logs/**/*.log
+
+# application
+/symfony/**/*.*
+!/symfony/.gitkeep
