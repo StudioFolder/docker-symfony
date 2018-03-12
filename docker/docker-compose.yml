@@ -5,7 +5,7 @@ services:
         ports:
             - '9002:9000'
         volumes:
-            - ./symfony:/var/www/symfony:cached
+            - ../symfony:/var/www/symfony:cached
             - ./logs/symfony:/var/www/symfony/var/logs:cached
     nginx:
         build: nginx
