@@ -1,16 +1,16 @@
-version: '3'
+version: '2'
 services:
     php:
         build: php-fpm
         ports:
-            - '9002:9000'
+            - '9000:9000'
         volumes:
-            - ../:/var/www/symfony:cached
+            - ../symfony:/var/www/symfony:cached
             - ./logs/symfony:/var/www/symfony/var/logs:cached
     nginx:
         build: nginx
         ports:
-            - '8081:80'
+            - '80:80'
         links:
             - php
         volumes:
